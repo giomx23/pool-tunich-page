@@ -193,7 +193,7 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   /* background-image: url("../public/images/pool-tunich-1.png"); */
-  background-image: url("../public/images/pool-tunich-2.png");
+  background-image: url("../public/images/pool-tunich-2.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(.30) saturate(.1);
@@ -250,7 +250,7 @@ nav.scrolled {
 
 .hero-eyebrow {
   font-family: 'Cinzel', serif;
-  font-size: .90rem;
+  font-size: clamp(.40rem, 2.5vw, 1rem);
   letter-spacing: .35em;
   color: var(--gold);
   text-transform: uppercase;
@@ -259,7 +259,7 @@ nav.scrolled {
 
 .hero h1 {
   font-family: 'Cinzel', serif;
-  font-size: clamp(6rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 7vw, 6rem);
   font-weight: 700;
   color: var(--cream);
   line-height: 1.1;
@@ -272,7 +272,7 @@ nav.scrolled {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-weight: 300;
-  font-size: clamp(3rem, 3.5vw, 2.4rem);
+  font-size: clamp(1.2rem, 3.5vw, 2.5rem);
   color: var(--gold-lt);
   letter-spacing: .08em;
   margin-top: .5rem;
@@ -287,7 +287,7 @@ nav.scrolled {
 
 .hero-desc {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.5rem, 2.5vw, 1.3rem);
+  font-size: clamp(.90rem, 2.5vw, 1.3rem);
   color: var(--marble);
   max-width: 560px;
   margin: 0 auto 2.4rem;
@@ -586,7 +586,7 @@ section {
 }
 
 .mat-granito {
-  background-image: url("../public/images/granito-1.png");
+  background-image: url("../public/images/granito-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -595,7 +595,7 @@ section {
 }
 
 .mat-marmol {
-  background-image: url("../public/images/marmol-1.png");
+  background-image: url("../public/images/marmol-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
