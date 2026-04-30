@@ -1,0 +1,29 @@
+<nav id="navbar">
+  <a class="nav-logo" href="#inicio">
+    <img src="images/logo.png">
+    <div class="nav-logo-text">
+      Pool Tunich
+      <span>Cantera · Granito · Mármol</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#materiales">Materiales</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+
+  <button class="hamburger" (click)="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" [class.open]="menuOpen">
+  <a href="#nosotros" (click)="close()">Nosotros</a>
+  <a href="#materiales" (click)="close()">Materiales</a>
+  <a href="#productos" (click)="close()">Productos</a>
+  <a href="#galeria" (click)="close()">Galería</a>
+  <a href="#contacto" (click)="close()">Contacto</a>
+</div>
