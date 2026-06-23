@@ -3,81 +3,86 @@
     <p class="section-label">Hablemos</p>
     <h2 class="section-title">Contáctenos</h2>
     <div class="section-line"></div>
+
     <div class="contacto-grid">
+
+      <!-- INFO -->
       <div class="contact-info">
-        <p>Estamos listos para asesorarle en la selección del material ideal para su proyecto. No dude en
-          comunicarse con nosotros.</p>
+        <p>
+          Estamos listos para asesorarle en la selección del material ideal para su proyecto.
+          No dude en comunicarse con nosotros.
+        </p>
 
-        <div class="contact-item">
-          <div class="contact-icon">👤</div>
-          <div class="contact-detail">
+        <div class="contact-card">
+          <i class="fa-solid fa-user-tie"></i>
+          <div>
             <strong>Ventas & Dirección</strong>
-            Sr. Carlos Cua Pool<br />
-            Ing. Antonio Pech
+            <span>Sr. Carlos Cua Pool</span>
+            <span>Ing. Antonio Pech</span>
           </div>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div class="contact-detail">
+        <a class="contact-card" href="mailto:pool-tunich@hotmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Correo</strong>
+            <a>pool-tunich&#64;hotmail.com</a>
+          </div>
+        </a>
+
+        <a class="contact-card" href="tel:9993324772">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Teléfono</strong>
+            <a>999 332 4772</a>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://api.whatsapp.com/send/?phone=529993324772&text=Hola%2C+estoy+interesado+en+recibir+informaci%C3%B3n&type=phone_number&app_absent=0"
+              target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <a>
+              Enviar mensaje
+            </a>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://maps.app.goo.gl/txuKgs7NfC731Sdb7" target="_blank">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
             <strong>Ubicación</strong>
-            Mérida, Yucatán, México
+            <a>
+              Ver en Google Maps
+            </a>
+          </div>
+        </a>
+
+        <div class="contact-card social">
+          <i class="fa-solid fa-share-nodes"></i>
+          <div>
+            <strong>Redes</strong>
+            <div class="social-links">
+              <a href="https://www.instagram.com/pooltunichmx/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/pooltunichmx?locale=es_LA" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div class="contact-detail">
-            <strong>Teléfono / WhatsApp</strong>
-            Consulte nuestro número de contacto
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">🕐</div>
-          <div class="contact-detail">
-            <strong>Horario de atención</strong>
-            Lunes a Sábado · 8:00 am – 6:00 pm
-          </div>
-        </div>
       </div>
 
-      <div>
-        <form class="contact-form" onsubmit="handleForm(event)">
-          <div class="form-group">
-            <label>Nombre completo</label>
-            <input type="text" placeholder="Su nombre" required />
-          </div>
-          <div class="form-group">
-            <label>Correo electrónico</label>
-            <input type="email" placeholder="correo@ejemplo.com" required />
-          </div>
-          <div class="form-group">
-            <label>Teléfono</label>
-            <input type="tel" placeholder="+52 999 000 0000" />
-          </div>
-          <div class="form-group">
-            <label>Material de interés</label>
-            <select>
-              <option value="">— Seleccione —</option>
-              <option>Cantera Natural</option>
-              <option>Granito</option>
-              <option>Mármol</option>
-              <option>Combinación de materiales</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Mensaje</label>
-            <textarea placeholder="Describa su proyecto o consulta…"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark" style="align-self:flex-start; margin-top:.5rem;">Enviar
-            consulta</button>
-        </form>
-        <div id="form-success"
-          style="display:none; margin-top:1.2rem; font-family:'Cormorant Garamond',serif; color:var(--gold); font-size:1.1rem;">
-          ✓ Mensaje enviado. Le contactaremos a la brevedad.
-        </div>
+      <!-- MAPA -->
+      <div class="contact-map">
+        <iframe src="https://maps.google.com/maps?q=pool%20tunich%20merida&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy">
+        </iframe>
       </div>
+
     </div>
   </div>
 </section>

@@ -1,13 +1,29 @@
 <section id="galeria">
-    <div class="container">
-      <p class="section-label">Portafolio</p>
-      <h2 class="section-title" style="color:var(--cream);">Galería de materiales</h2>
-      <div class="section-line"></div>
-      <img src="images/background-welcome.jpg" alt="Muestras de cantera, granito y mármol" class="gallery-main"
-        style="margin-top:2rem;" />
-      <p
-        style="margin-top:1.2rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--stone);font-size:.95rem;text-align:center;">
-        Panel de muestras — Cantera, granito negro, granito multicolor, mármol blanco y más.
-      </p>
-    </div>
-  </section>
+  <div class="container">
+    <p class="section-label">Portafolio</p>
+    <h2 class="section-title" style="color:var(--cream);">
+      Galería de trabajos realizados
+    </h2>
+    <div class="section-line"></div>
+
+    <swiper-container slides-per-view="1" space-between="10" loop="true" navigation="true" pagination="true"
+      autoplay-delay="5000" breakpoints='{
+                                            "640": { "slidesPerView": 1 },
+                                            "768": { "slidesPerView": 1 },
+                                            "1024": { "slidesPerView": 1 }
+                                          }'
+      class="mySwiper">
+      <swiper-slide *ngFor="let img of images">
+        <div class="slide">
+          <img [src]="img.src" [alt]="img.title" class="gallery-main" />
+
+          <div class="overlay">
+            <h3>{{ img.title }}</h3>
+            <p>{{ img.description }}</p>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+  </div>
+</section>
